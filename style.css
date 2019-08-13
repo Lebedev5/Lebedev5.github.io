@@ -53,6 +53,10 @@
 
 .header .header__contacts .header__contacts-icons img{
   width: 50px;
+}
+
+.header .header__contacts .header__contacts-icons a{
+  display: inline-block;
   margin-right: 15px;
 }
 
