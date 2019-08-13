@@ -175,6 +175,16 @@
   }
   .post{
     font-weight: 400;
+    position: relative;
+  }
+  .post::before{
+    content: "";
+    position: absolute;
+    left: -35px;
+    bottom: 0;
+    z-index: 10;
+    border-right: 35px solid #e5e5e5;
+    border-top: 35px solid rgba(0, 0, 0, 0)
   }
   .post .title{
     border-radius: 8px 8px 0 0;
