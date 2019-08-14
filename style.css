@@ -28,7 +28,7 @@
   flex-direction: column;
 }
 
-.header .header__contacts .header__contacts-inner{
+.header .header__contacts-inner{
   flex: auto;
   display: flex;
   justify-content: center;
@@ -36,7 +36,7 @@
   flex-direction: column;
 }
 
-.header .header__contacts .header__contacts-caption{
+.header .header__contacts-caption{
   font-weight: 300;
   font-size: 50px;
   text-align: center;
@@ -44,18 +44,23 @@
   color: #555;
 }
 
-.header .header__contacts .header__contacts-icons{
+.header .header__contacts-icons{
   margin-top: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.header .header__contacts .header__contacts-icons img{
+.header .header__contacts-icons img{
   width: 50px;
+  transition-duration: 0.2s;
 }
 
-.header .header__contacts .header__contacts-icons a{
+.header .header__contacts-icons img:hover{
+  transform: scale(1.2);
+}
+
+.header  .header__contacts-icons a{
   display: inline-block;
   margin-right: 15px;
 }
@@ -88,17 +93,17 @@
   align-items: center;
 }
 
-.navigation .navigation__menu .navigation__menu-item{
+.navigation .navigation__menu-item{
   font-size: 30px;
 }
 
-.navigation .navigation__menu .navigation__menu-item a{
+.navigation .navigation__menu-item a{
   display: block;
   color: #555;
   text-decoration: none;
 }
 
-.navigation .navigation__menu .navigation__menu-item a:hover{
+.navigation .navigation__menu-item a:hover{
   text-decoration: underline;
 }
 
@@ -129,13 +134,14 @@
   color: white;
 }
 
-.post__outer .post .post__inner .description{
+.post .description{
   padding: 20px;
   background-color: #e5e5e5 /*#B9D1EC*/;
 }
 
-.post__outer .post .post__inner .description p{
+.post .description p{
   font-family: sans-serif;
+  margin-bottom: 20px;
 }
 
 
@@ -170,14 +176,14 @@
     margin: 0 auto;
     text-align: center;
   }
-  .navigation .navigation__menu .navigation__menu-item a{
+  .navigation .navigation__menu-item a{
     padding: 10px 20px 5px;
   }
   .post{
     font-weight: 400;
     position: relative;
   }
-  .post::before{
+  .post .description::before{
     content: "";
     position: absolute;
     left: -35px;
@@ -190,7 +196,7 @@
     border-radius: 8px 8px 0 0;
     font-size: 50px;
   }
-  .post__outer .post .post__inner .description{
+  .post .description{
     font-size: 27px;
   }
   .main{
@@ -205,23 +211,23 @@
   .header .header__title-of-page{
     font-size: 70px;
   }
-  .header .header__contacts .header__contacts-caption{
+  .header .header__contacts-caption{
     font-size: 30px;
   }
   .navigation .navigation__menu{
     flex-direction: column;
   }
-  .navigation .navigation__menu .navigation__menu-item{
+  .navigation .navigation__menu-item{
     width: 100%;
     border-bottom: 1px solid #4284D3;
   }
-  .navigation .navigation__menu .navigation__menu-item a{
+  .navigation .navigation__menu-item a{
     padding: 20px 0px;
   }
   .post .title{
     font-size: 36px;
   }
-  .post__outer .post .post__inner .description p{
+  .post .description p{
     font-size: 20px;
   }
   .footer .footer__description{
