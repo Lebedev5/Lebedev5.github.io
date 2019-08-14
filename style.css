@@ -53,11 +53,6 @@
 
 .header .header__contacts-icons img{
   width: 50px;
-  transition-duration: 0.2s;
-}
-
-.header .header__contacts-icons img:hover{
-  transform: scale(1.2);
 }
 
 .header  .header__contacts-icons a{
@@ -171,6 +166,12 @@
 
 
 @media (min-width: 541px){
+  .header .header__contacts-icons img{
+    transition-duration: 0.2s;
+  }
+  .header .header__contacts-icons img:hover{
+    transform: scale(1.2);
+  }
   .navigation .navigation__inner{
     width: 80%;
     margin: 0 auto;
@@ -208,6 +209,9 @@
 }
 
 @media (max-width: 540px){
+  .header  .header__contacts-icons a{
+    cursor: default;
+  }
   .header .header__title-of-page{
     font-size: 70px;
   }
